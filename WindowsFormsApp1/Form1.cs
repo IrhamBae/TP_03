@@ -21,19 +21,14 @@ namespace WindowsFormsApp1
         {
 
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
+
+        private void btnSubmit_Click(object sender, EventArgs e)
         {
+            // Mendapatkan nilai dari input teks
+            string inputTextValue = txtInput.Text;
 
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
+            // Menampilkan nilai input di dalam label output
+            lblOutput.Text = "Output: " + inputTextValue;
         }
     }
 }
